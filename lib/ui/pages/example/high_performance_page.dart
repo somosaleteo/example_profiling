@@ -13,7 +13,7 @@ class HighPerformancePage extends StatelessWidget {
         automaticallyImplyLeading: true,
       ),
       body: ListView.builder(
-        itemCount: 5000,
+        itemCount: 10000,
         itemBuilder: (BuildContext context, int index) {
           return ItemListWidget(
             index: index,

@@ -23,7 +23,7 @@ class LowePerformancePage extends StatelessWidget {
 
 List<Widget> getItemList() {
   List<Widget> itemlist = [];
-  const int itemCount = 5000;
+  const int itemCount = 10000;
 
   for (var i = 0; i < itemCount; i++) {
     itemlist.add(ItemListWidget(index: i));

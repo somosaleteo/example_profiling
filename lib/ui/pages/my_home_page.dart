@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Padding(
-            padding: EdgeInsets.only(top: 80),
+            padding: EdgeInsets.only(top: 150),
             child: Text(
               'Profiling and performance',
               style: TextStyle(

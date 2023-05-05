@@ -1,3 +1,4 @@
+import 'package:example_profiling/ui/pages/tips/tips_page.dart';
 import 'package:example_profiling/ui/pages/example/high_performance_page.dart';
 import 'package:example_profiling/ui/pages/example/low_performance_page.dart';
 import 'package:example_profiling/ui/pages/example/network_page.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         'lowPerformance': (context) => const LowePerformancePage(),
         'highPerformance': (context) => const HighPerformancePage(),
         'network': (context) => const NetworkPage(),
+        'tips': (context) => const TipsPage(),
       },
       initialRoute: 'home',
     );
