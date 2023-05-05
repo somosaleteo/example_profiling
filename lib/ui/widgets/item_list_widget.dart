@@ -8,19 +8,16 @@ class ItemListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ColoredBox(
-      color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
-          .withOpacity(1.0),
-      child: SizedBox(
-        height: 60,
-        child: Center(
-          child: Text(
-            'Item $index',
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-            ),
+    return Container(
+      color: Colors.primaries[index % Colors.primaries.length],
+      height: 60,
+      child: Center(
+        child: Text(
+          'Item $index',
+          style: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
         ),
       ),

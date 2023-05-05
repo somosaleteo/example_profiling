@@ -1,5 +1,6 @@
 import 'package:example_profiling/ui/pages/example/high_performance_page.dart';
 import 'package:example_profiling/ui/pages/example/low_performance_page.dart';
+import 'package:example_profiling/ui/pages/example/network_page.dart';
 import 'package:example_profiling/ui/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
-        'home': (context) => const MyHomePage(),
+        'home': (context) =>  MyHomePage(),
         'lowPerformance': (context) => const LowePerformancePage(),
         'highPerformance': (context) => const HighPerformancePage(),
+        'network': (context) => const NetworkPage(),
       },
       initialRoute: 'home',
     );
